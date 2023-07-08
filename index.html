@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>n</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.3/p5.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    
+    <meta charset="utf-8" />
+    
+    <!-- importar librería de rita -->
+    <script src="rita.min.js"></script>
+    <!-- importar librería de hydra -->
+    <script src="script.js" defer></script>
+    <!-- importar p5.js función con funciones -->
+    <script src="flores.js" type="text/javascript"></script>
+  </head>
+  <body>
+    
+    <div id="main">
+      <!-- aquí escribimos el código de hydra -->
+    <code>
+
+    s0.initImage("inari.png")
+
+
+
+src(s0)
+    .add(noise(2, 0.03)
+      .color(0,0.1,0,0)
+      .scale(0.5,[1.01],()=>window.innerWidth/window.innerHeight))
+    .contrast(1.5).luma(0.5, 0.15)
+    .modulate(o0, () => 0.051)
+    //.luma(0.5, 0.1)
+    .scale(0.99, 0.99)
+    //.pixelate(100*10, 50*10)
+
+.out()
+    </code
+      
+    
+    <div id="container">
+      <script src="sketch.js" defer></script>
+    </div>
+  </body>
+</html>
